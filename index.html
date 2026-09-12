@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A little question for you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="hearts-bg" aria-hidden="true"></div>
+  <main class="app-shell">
+    <section class="screen landing-screen is-active" id="landingScreen">
+      <div class="eyebrow">a tiny secret, just for you</div>
+      <h1>I have something<br><span>special to ask you...</span></h1>
+      <div class="rule"><i></i><b>♥</b><i></i></div>
+      <button class="envelope" id="openNote" type="button" aria-label="Open the secret note">
+        <span class="envelope-flap"></span>
+        <span class="envelope-paper"><strong>Hey you,</strong><br><br>This little note has a question<br>waiting inside...</span>
+        <span class="envelope-heart">♥</span>
+        <span class="envelope-label">click the note<br><small>to see what it is...</small></span>
+      </button>
+      <p class="hint">tap the envelope when you’re ready <span>✦</span></p>
+    </section>
+
+    <section class="screen story-screen note-open-screen" id="noteOpenScreen">
+      <div class="topline"><span>02 / 10</span><span>♡</span></div>
+      <div class="opened-letter"><p>Hey You,</p><p>There’s something I’ve<br>been wanting to ask you...</p><p>You mean a lot to me and<br>I’d love to share more moments<br>with you. ♥</p><p>So... please read the next page...</p></div>
+      <button class="btn continue" id="continueToQuestion">turn the page <span>♥</span></button>
+    </section>
+
+    <section class="screen question-screen" id="questionScreen">
+      <div class="topline"><span>chapter two</span><span>♡</span></div>
+      <div class="question-copy">
+        <p class="script-kicker">a question from my heart</p>
+        <h2>Shall We<br><em>Date?</em> <span>♥</span></h2>
+        <p class="quote">“Some people make your heart smile<br>without even trying.”</p>
+      </div>
+      <div class="date-art" role="img" aria-label="A boy offering a flower to a girl"> 
+        <div class="sun"></div><div class="moon"></div>
+        <div class="city city-one"></div><div class="city city-two"></div>
+        <div class="lamp"><i></i></div>
+        <div class="boy"><i class="head"></i><i class="body"></i><i class="leg leg-a"></i><i class="leg leg-b"></i><i class="arm"></i><i class="rose">♥</i></div>
+        <div class="girl"><i class="head"></i><i class="hair"></i><i class="body"></i><i class="leg leg-a"></i><i class="leg leg-b"></i><i class="arm"></i></div>
+        <span class="art-heart">♥</span>
+      </div>
+      <p class="prompt" id="prompt">So... what do you say?</p>
+      <div class="actions" id="firstActions"><button class="btn yes" id="yesMain">YES <span>♥</span></button><button class="btn why" id="whyButton">WHY? <span>🤔</span></button></div>
+    </section>
+
+    <section class="screen celebration-screen" id="celebrationScreen">
+      <div class="celebrate-sparkle">✦</div><p class="script-kicker">you just made my heart do a little dance</p><h2>YAYYY! <span>♥♥♥</span></h2><p>You just made my day! 🥰</p><p>Looks like we have a date! <span>💕</span></p><button class="btn again" id="againButton">read it again <span>↺</span></button></section>
+    <section class="screen story-screen quote-screen" id="quoteScreen"><p class="script-kicker">one more thing...</p><h2>Why?</h2><div class="quote-list"><p>Because I think we could make some really good memories together. <b>♥</b></p><p>Because every great story has to start somewhere. <b>✦</b></p><p>Because I’d really like to take you on a date. <b>🥰</b></p></div><p class="prompt">So... shall we give it a chance? <span>♥</span></p><button class="btn yes" id="yesQuote">YES <span>♥</span></button><button class="btn no" id="noStart">NO <span>🙈</span></button></section>
+    <section class="screen story-screen attempt-screen" id="attempt1"><p class="script-kicker">wait, wait...</p><h2>Are you sure? 🥺</h2><p>It’s okay... take your time...</p><button class="btn yes" id="yesAttempt1">YES <span>♥</span></button><button class="btn no" id="no1">NO <span>🙈</span></button></section>
+    <section class="screen story-screen attempt-screen" id="attempt2"><p class="script-kicker">just think about it</p><h2>Think about it again... ♥</h2><p>You’ll love it, I promise!</p><button class="btn yes big" id="yesAttempt2">YES <span>♥</span></button><button class="btn no small" id="no2">NO <span>🙈</span></button></section>
+    <section class="screen story-screen attempt-screen" id="attempt3"><p class="script-kicker">hmm...</p><h2>I don't think<br>you're sure yet 😜</h2><p>Just kidding... maybe? 🙈</p><button class="btn yes" id="yesAttempt3">YES <span>♥</span></button><button class="btn no" id="no3">NO <span>🙈</span></button></section>
+    <section class="screen story-screen playful-screen" id="playfulScreen"><div class="bunny">♡<br>🐰</div><h2>Okay... I’ll respect that.</h2><p>But I’ll still be here<br>with a smile. <span>♥</span></p><button class="btn yes" id="maybeLater">Maybe later? 😊</button></section>
+    <section class="screen story-screen final-screen" id="finalScreen"><div class="phone-frame"><div class="phone-speaker"></div><div class="phone-screen"><p class="script-kicker">a question from my heart</p><h2>Shall We<br><em>Date?</em> <span>♥</span></h2><p class="quote">“Some people make your heart smile<br>without even trying.”</p><div class="mini-date-art" aria-hidden="true"><div class="mini-sun"></div><div class="mini-boy"></div><div class="mini-girl"></div><span>♥</span></div><p class="prompt">So... what do you say?</p><button class="btn yes" id="finalYes">YES <span>♥</span></button><button class="btn why" id="finalWhy">WHY? <span>🤔</span></button></div><div class="phone-home"></div></div></section>
+  </main>
+  <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
