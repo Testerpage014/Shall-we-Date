@@ -1,0 +1,13 @@
+{
+  "name": "romantic-date-project",
+  "version": "1.0.0",
+  "description": "Interactive romantic date question website with Excel response storage",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "exceljs": "^4.4.0"
+  }
+}
